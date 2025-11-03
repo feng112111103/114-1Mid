@@ -44,11 +44,33 @@ http.createServer((req, res) => {
 
   // Switch根據不同路由要寫的部分
 
-
-
-
-
+switch (req.url) {
   
+  // 若請求的 URL 是根路徑 '/'
+  case '/':
+    // 載入首頁模板檔案
+    filePath = '/index.ejs';
+    break;
+
+  // 若請求的 URL 是 '/calculator'
+  case '/calculator':
+    // 載入計算機頁面的模板檔案
+    filePath = '/index2.ejs';
+    break;
+
+ // 其他的請求路徑
+  default:
+    // 判斷是否為靜態資源（例如 CSS、JS、圖片等）
+    if (req.url.endsWith('.css') || req.url.endsWith('.js') || req.url.endsWith('.png') || req.url.endsWith('.jpg')) {
+      // 若是靜態資源，就指定要直接讀取該檔案
+      fileOtherFile = req.url;
+    } else {
+      // 若不是靜態資源或已知路徑，就載入錯誤頁（或其他預設頁）
+      filePath = '/index3.ejs';
+    }
+    break;
+}
+
 
   // ==========================================
   // 步驟 2: 判斷文件類型（提取副檔名）
