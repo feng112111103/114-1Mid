@@ -51,13 +51,29 @@ public void mt_getResult(){
 1. a.
 
 Ans: 
+```html
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" ...>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+    </form>
+</body>
+</html>
+```
 
 
 1. b.
 
 Ans:
 ![圖片alt](./{2C74355A-C1F3-4A42-91EE-720BAA842B17}.png "圖片title")
-```
+```html
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -102,7 +118,7 @@ console.log("庫存少於 10 的項目：", getLowStock(products));
 
 Ans:
 ![圖片alt](./{2C74355A-C1F3-4A42-91EE-720BAA842B17}.png "圖片title")
-```
+```html
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -113,6 +129,7 @@ Ans:
 <body>
     <form id="form1" runat="server">
         <div>
+        // getLowStock: 取得庫存低於 10 的商品名稱陣列<br>
         // getLowStock: 取得庫存低於 10 的商品名稱陣列<br>
     function getLowStock(products) {
   // 用 filter 篩選，僅保留庫存量小於 10 的商品
@@ -133,7 +150,6 @@ const products = [
 // 執行 getLowStock 並顯示結果
 console.log("庫存少於 10 的項目：", getLowStock(products));
 // Output: 庫存少於 10 的項目： ['mouse','monitor']
-// Output: 庫存少於 10 的項目： ['mouse','monitor']
         </div>
     </form>
 </body>
@@ -150,7 +166,7 @@ Ans:<br>
 ![圖片alt](./index2.jpg.png "圖片title")
 ![圖片alt](./error.jpg.png "圖片title")
 ![圖片alt](./image.png "圖片title")
-```
+```html
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -211,7 +227,7 @@ Ans:
 Ans:<br>
 ![圖片alt](./貸款.jpg.png "圖片title")
 ![圖片alt](./貸款返還.png "圖片title")
-```
+```html
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -248,7 +264,7 @@ switch (req.url) {
 
 Ans:
 ![圖片alt](./錯誤.jpg "圖片title")
-```
+```html
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
